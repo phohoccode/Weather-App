@@ -1,0 +1,36 @@
+@media  (max-width: 739px) {
+    .page-left,
+    .page-right {
+        padding: 24px;
+    }
+    .search {
+        height: 50px;
+    }
+    .icon-search {
+        font-size: 28px;
+    }
+    .show-more,
+    .close {
+        display: block;
+    }
+    .show-more {
+        width: 100%;
+    }
+    .page-right {
+        display: none;
+    }
+    .app.show .page-right{
+        display: block;
+    }
+    .app.show .page-left {
+        display: none;
+    }
+    .row {
+        width: 100%;
+        flex: unset;
+    }
+    .close {
+        right: 14px;
+    }
+
+}

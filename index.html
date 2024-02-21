@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/font/fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<body>
+    <div class="app">
+        <div class="page-left">
+            <div class="search">
+                <input type="text" placeholder="Nhập vị trí của bạn..." autofocus>
+                <div class="icon-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <figure class="weather-img">
+                <img src="assets/img/img-not-found-2.jpg"  alt="">
+            </figure>
+            <div class="temperature">------</div>
+            <div class="condition">----------------</div>
+            <div class="seperate"></div>
+            <div class="time">------------</div>
+            <div class="address">------------------</div>
+            <button class="show-more">Xem thêm thông tin</button>
+        </div>
+        <div class="page-right">
+            <button class="close">
+                <i class="fa-light fa-xmark"></i>
+            </button>
+            <h3 class="text">Thời tiết hôm nay</h3>
+            <div class="sections">
+                <div class="row">
+                    <div class="section">
+                        <span class="section-name wind">Wind (Gió)</span>
+                        <span class="section-value wind">---</span>
+                        <span class="section-sub-value wind">---</span>
+                    </div>
+                    <div class="section">
+                        <span class="section-name uv">UV Index (Chỉ số UV)</span>
+                        <span class="section-value uv">---</span>
+                        <span class="section-sub-value uv">---</span>
+                    </div>
+                    <div class="section">
+                        <span class="section-name cloud">Cloud (Độ che phủ mây)</span>
+                        <span class="section-value cloud">---</span>
+                        <span class="section-sub-value cloud">---</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="section">
+                        <span class="section-name humidity">Humidity (Độ ẩm)</span>
+                        <span class="section-value humidity">---</span>
+                        <span class="section-sub-value humidity">---</span>
+                    </div>
+                    <div class="section">
+                        <span class="section-name real-feel">Temperature (Nhiệt độ)</span>
+                        <span class="section-value real-feel">---</span>
+                        <span class="section-sub-value real-feel">---</span>
+                    </div>
+                    <div class="section">
+                        <span class="section-name pressure">Pressure (Áp suất)</span>
+                        <span class="section-value pressure">---</span>
+                        <span class="section-sub-value pressure">---</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="section">
+                        <span class="section-name gust">Gust (Gió giật)</span>
+                        <span class="section-value gust">---</span>
+                        <span class="section-sub-value gust">---</span>
+                    </div>
+                    <div class="section">
+                        <span class="section-name vis">Vis (Tầm nhìn)</span>
+                        <span class="section-value vis">---</span>
+                        <span class="section-sub-value vis">---</span>
+                    </div>
+                    <div class="section">
+                        <span class="section-name country">Country (Quốc gia)</span>
+                        <span class="section-value country">---</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script defer src="assets/js/main.js"></script>
+</body>
+</html>
