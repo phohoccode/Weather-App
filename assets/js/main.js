@@ -41,6 +41,9 @@ const weatherApp = (() => {
     const arrSearchHistory = []
 
     return {
+        loadMessage() {
+            alert('Lưu ý: \n- Website hiện tại chưa hỗ trợ đầy đủ các vị trí ở các tỉnh thành Việt Nam\n - Thông tin có thể chênh lệch ít so với thực tế \n - Khi nhập vui lòng không gõ dấu để tránh sai sót. Xin cảm ơn!')
+        },
         handleEvent() {
             const API_KEY = 'e2ed82358911474ab0e160427242002'
 
@@ -293,6 +296,7 @@ const weatherApp = (() => {
             }
         },
         start() {
+            this.loadMessage()
             this.handleEvent()
         }
     }
