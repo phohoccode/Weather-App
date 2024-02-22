@@ -3,11 +3,11 @@
     .page-right {
         padding: 24px;
     }
-    .search {
-        height: 50px;
-    }
     .icon-search {
         font-size: 28px;
+    }
+    .search {
+        margin-bottom: 20px;
     }
     .show-more,
     .close {
@@ -17,10 +17,18 @@
         display: none;
     }
     .app.show .page-right{
+        position: fixed;
+        width: 100%;
+        height: 100%;
         display: block;
+        animation: slideUp .5s ease;
+        z-index: 999;
+        overflow-y: auto;
+        background-color: #fff;
     }
-    .app.show .page-left {
-        display: none;
+    .app.show .close {
+        color: black;
+        background-color: #fff;
     }
     .row {
         width: 100%;
@@ -30,4 +38,14 @@
         right: 14px;
     }
 
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 }
